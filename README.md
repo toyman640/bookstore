@@ -84,16 +84,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo
-
-- **coming soon**
-
-<p align="right">(<a href="#readme-top" >back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
 
 To get a local copy up and running, follow these steps.
 
@@ -108,6 +101,7 @@ In order to run this project you need the following tools:
 
 Clone this repository to your desired folder by running the following commands in your terminal:
 
+
   cd your-prefered-folder-name
   
   git clone https://github.com/toyman640/bookstore.git
@@ -115,18 +109,35 @@ Clone this repository to your desired folder by running the following commands i
 
 ### Install
 
-Install this project with:
+- Install this project with:
 
 
-- cd my-project
-- npm install . this will make sure that all depencies are installed so that the project can work correctly
+  cd bookstore
+
+  npm install or npm i
+
+
+- Run an optimized build for prodction:
+
+  npm run build
 
 
 ### Usage
-make sure that you have node installed  in your local machine so that you can get access of using npm command.
 
-After creating the cloning this repo,open it into vs code or your prefered IDE and then   open you terminal to  run this command
-npm start : this command will start webpack dev-server that will watch any change made in dist folder so that it can reflect to the browser without reflesh the page.
+To run the project, execute the following command:
+
+sh
+  npm start
+
+
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm run test
+```
 
 ### Deployment
 
