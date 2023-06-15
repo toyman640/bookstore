@@ -99,16 +99,18 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-- you need a laptop.
-- you need github installed on it.
-- You need a basic knowledge of Html and Css  JavaScript and React.
+In order to run this project you need the following tools:
+- Node.js in your computer
+- IDE(e.g.: Vscode,...)
+- Terminal
 
 ### Setup
 
-Clone this repository to your desired folder:
-- cd my-folder
-- git clone https://github.com/toyman640/bookstore.git
+Clone this repository to your desired folder by running the following commands in your terminal:
+
+  cd your-prefered-folder-name
+  
+  git clone https://github.com/toyman640/bookstore.git
 
 
 ### Install
