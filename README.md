@@ -84,9 +84,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo
 
-- [Live Demo Link]**coming soon**
+- **coming soon**
 
 <p align="right">(<a href="#readme-top" >back to top</a>)</p>
 
