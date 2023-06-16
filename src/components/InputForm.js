@@ -3,9 +3,8 @@ function InputForm() {
     <>
       <form>
         <input placeholder="Book title" />
-        <select>
-          <option value="" disabled selected hidden>Author</option>
-        </select>
+        <input placeholder="author" />
+        <button type="button">Submit</button>
       </form>
     </>
   );
