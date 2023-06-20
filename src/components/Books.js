@@ -14,6 +14,14 @@ function Books() {
         <div key={book.item_id}>
           <h2>{book.book}</h2>
           <p>
+            Id:
+            {book.item_id}
+          </p>
+          <p>
+            Title:
+            {book.title}
+          </p>
+          <p>
             Author:
             {book.author}
           </p>
@@ -21,7 +29,7 @@ function Books() {
             Category:
             {book.category}
           </p>
-          <Deletebook />
+          <Deletebook bookId={book.item_id} />
         </div>
       ))}
       <InputForm />
