@@ -1,44 +1,17 @@
+import { useSelector } from 'react-redux';
 import InputForm from './InputForm';
+import Deletebook from './Deletebook';
 import '../App.css';
 
 function Books() {
-  const library = [
-    {
-      id: 1,
-      book: 'Songs of ice and fire',
-      author: 'Martin',
-      category: 'Adventure',
-    },
-    {
-      id: 2,
-      book: '007',
-      author: 'Bond',
-      category: 'Action',
-    },
-    {
-      id: 3,
-      book: 'Star Wars',
-      author: 'Boba Fett',
-      category: 'Sci-Fi',
-    },
-    {
-      id: 4,
-      book: 'Star Trek',
-      author: 'Spock',
-      category: 'Sci-Fi',
-    },
-    {
-      id: 5,
-      book: 'Bond Master',
-      author: 'Vander Wals',
-      category: 'Thriller',
-    },
-  ];
+  const books = useSelector((state) => state.shelf.initialBooks);
   return (
     <div className="BookPage">
-      <h1>Library</h1>
-      {library.map((book) => (
-        <div key={book.id}>
+      <h1>
+        Library
+      </h1>
+      {books.map((book) => (
+        <div key={book.item_id}>
           <h2>{book.book}</h2>
           <p>
             Author:
@@ -48,7 +21,7 @@ function Books() {
             Category:
             {book.category}
           </p>
-          <button type="button">Delete</button>
+          <Deletebook />
         </div>
       ))}
       <InputForm />

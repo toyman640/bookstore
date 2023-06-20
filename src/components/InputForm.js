@@ -1,10 +1,12 @@
+import Addbook from './Addbook';
+
 function InputForm() {
   return (
     <>
       <form>
         <input placeholder="Book title" />
         <input placeholder="author" />
-        <button type="button">Submit</button>
+        <Addbook />
       </form>
     </>
   );
