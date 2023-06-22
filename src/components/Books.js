@@ -13,28 +13,39 @@ function Books() {
   }, [dispatch]);
   return (
     <div className="BookPage">
-      <h1>
-        Library
-      </h1>
       {books.map((book) => (
-        <div key={book.id}>
-          <p>
-            Id:
-            {book.id}
-          </p>
-          <p>
-            Title:
-            {book.title}
-          </p>
-          <p>
-            Author:
-            {book.author}
-          </p>
-          <p>
-            Category:
-            {book.category}
-          </p>
-          <Deletebook bookId={book.id} />
+        <div className="Book-item" key={book.id}>
+          <div className="First-part">
+            <p className="Category">
+              {book.category}
+            </p>
+            <p className="Title">
+              {book.title}
+            </p>
+            <p className="Author">
+              {book.author}
+            </p>
+            <ul className="Actions">
+              <li>Comments </li>
+              |
+              <li><Deletebook bookId={book.id} /></li>
+              |
+              <li>Edit </li>
+            </ul>
+          </div>
+          <div className="Second-part">
+            <div className="Oval" />
+            <h2 className="Rate">
+              100%
+              <br />
+              <span className="Status">Completed</span>
+            </h2>
+          </div>
+          <div className="Third-part">
+            <p className="Current">CURRENT CHAPTER</p>
+            <p className="Chap">Chapter 17</p>
+            <button className="Chap-btn" type="button">UPDATE PROGRESS</button>
+          </div>
         </div>
       ))}
       <InputForm />
