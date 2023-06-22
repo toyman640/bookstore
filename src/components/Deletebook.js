@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBooks } from '../redux/books/booksSlice';
 
 function Deletebook({ bookId }) {
   const dispatch = useDispatch();
   const handleDelete = () => {
-    dispatch(removeBook(bookId));
+    dispatch(removeBooks({ id: bookId }));
   };
   return (
     <div>
@@ -16,7 +16,7 @@ function Deletebook({ bookId }) {
 }
 
 Deletebook.propTypes = {
-  bookId: PropTypes.number.isRequired,
+  bookId: PropTypes.string.isRequired,
 };
 
 export default Deletebook;
