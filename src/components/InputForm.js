@@ -23,13 +23,14 @@ function InputForm() {
     form.reset();
   };
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input name="title" placeholder="Book title" />
-        <input name="author" placeholder="author" />
+    <div className="Form-section">
+      <h2 className="Form-title">ADD NEW BOOK</h2>
+      <form className="Form-fields" onSubmit={handleSubmit}>
+        <input className="Tilte-input" name="title" placeholder="Book title" />
+        <input className="Author-input" name="author" placeholder="author" />
         <Addbook />
       </form>
-    </>
+    </div>
   );
 }
 
